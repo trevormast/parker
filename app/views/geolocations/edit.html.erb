@@ -1,6 +1,5 @@
-<h1>Editing geolocation</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @geolocation %> |
-<%= link_to 'Back', geolocations_path %>
+<%- model_class = Geolocation -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Geolocation %></h1>
+</div>
+<%= render :partial => 'form' %>
